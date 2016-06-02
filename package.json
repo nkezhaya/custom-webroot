@@ -1,0 +1,14 @@
+{
+  "name": "custom-webroot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "forever start -a --uid webroot -e error.log server.js",
+    "stop": "forever stop webroot"
+  },
+  "dependencies": {
+ 	"http" : "*",
+	"finalhandler": "*",
+	"serve-static": "*"
+  }
+}
